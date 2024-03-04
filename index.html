@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container-fluid col p-3">
+            <div class="row">
+                <div class="col bg-white me-3 rounded-5 mt-3 mb-3 p-3">
+                    <h3 >Basic Details</h3>
+                    <div class="upload-image position-relative form-group">
+                        <svg class="position-absolute top-0 start-50 translate-middle" xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 24 28" fill="none">
+                            <path d="M8.57143 21.25H15.4286C16.3714 21.25 17.1429 20.4906 17.1429 19.5625V11.1249H19.8686C21.3943 11.1249 22.1657 9.30239 21.0857 8.23926L13.2171 0.493596C12.5486 -0.164532 11.4686 -0.164532 10.8 0.493596L2.93143 8.23926C1.85143 9.30239 2.60571 11.1249 4.13143 11.1249H6.85714V19.5625C6.85714 20.4906 7.62857 21.25 8.57143 21.25ZM1.71429 24.625H22.2857C23.2286 24.625 24 25.3844 24 26.3125C24 27.2406 23.2286 28 22.2857 28H1.71429C0.771429 28 0 27.2406 0 26.3125C0 25.3844 0.771429 24.625 1.71429 24.625Z" fill="#4318FF"/>
+                        </svg>
+                        <div>
+                            <h6 class="text-primary">Upload Image</h6>
+                            <p>PNG,JPG files are allowed</p>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-2 form-group">
+                            <label for="select" class="required">Salutation</label>
+                            <select class="form-select form-control rounded-4 mt-3"id="select">
+                                <option value="option1"> </option>
+                                <option value="option2">Mr.</option>
+                                <option value="option3">Mrs.</option>
+                            </select>
+                        </div>
+                        <div class="col-md-5 form-group">
+                            <label class="required" for="first-name">First Name</label>
+                            <input type="text" id="first-name" class="form-control rounded-4 opacity-50 mt-3" placeholder="enter first name">
+                        </div>
+                        <div class="col-md-5 form-group">
+                            <label class="required" for="last-name">Last Name</label>
+                            <input type="text" id="last-name" class="form-control rounded-4 opacity-50 mt-3" placeholder="enter last name">
+                        </div>
+                    </div>
+
+                    <div class="row mt-4 second-row">
+                        <div class="col-md-6">
+                            <label for="email-address" class="required">Email Address</label>
+                            <input type="email" id="email-address" class="form-control rounded-4 opacity-50 mt-3" placeholder="mail@gmail.com">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="mobile-number" class="required">Mobile Number </label>
+                            <input type="text" id="mobile-number" class="form-control rounded-4 opacity-50  mt-3" placeholder="enter mobile number ">
+                        </div>
+                    </div>
+                    <div class="row  mt-4 ">
+                        <div class="col-md-6">
+                            <label for="dob" class="required">Date of Birth </label>
+                            <input type="date" id="dob" class="form-control rounded-4 opacity-50 mt-3">
+                        </div>
+                    
+                        
+                        <div class="col-md-6">
+                            <label for="gender" class="required mb-2">Gender </label>
+
+                            <div class="mt-3">
+                                <input type="radio" id="gender" class="form-check-input rounded-4">
+                                <label for="gender">Male</label>
+                                <input type="radio" id="gender" class="form-check-input rounded-4">
+                                <label for="gender">Female</label>
+                            </div>
+                        </div>
+                              
+                    </div>
+                          
+                    
+                    <div class="col-md-12 mt-4">
+                        <label for="inputAddress" class="form-label required">Address </label>
+                        <input type="text" class="form-control rounded-4 opacity-50 mt-3" id="inputAddress" placeholder="enter address">
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <label for="country" class="required">Country </label>
+                            <select name="country" id="country" class="form-control rounded-4 form-select mt-3">
+                                <option value="option1"></option>
+                                <option value="option2">India</option>
+                                <option value="option3">Other country</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="state" class="required">State</label>
+                            <select name="state" id="state" class="form-control rounded-4 form-select mt-3">
+                                <option value="option1"></option>
+                                <option value="option2">Kerala</option>
+                                <option value="option3">Other state</option>
+                            </select>
+                        </div>
+                    </div>  
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <label for="city" class="required">City</label>
+                            <input type="text" id="city" placeholder="enter city" class="form-control rounded-4 opacity-50 mt-3 mb-3">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="pin" class="required">Pin/Zip</label>
+                            <input type="text" id="pin" class="form-control rounded-4 opacity-50 mt-3 mb-3" placeholder="enter pin\zip">
+                        </div>
+                    </div>                 
+                </div>
+                <div class="col-md bg-white form-group mt-3 rounded-5 mb-3 p-3">
+                    <h3>Advanced Details</h3>
+                    <div class="alert alert-warning mb-0" role="alert">
+                        <h5>Sample warning messages - alert</h5>
+                        <p class="fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed fermentum felis. Aliquam erat volutpat. Donec faucibus mauris vel nibh sodales feugiat.</p>
+                    </div>
+                    <div class="row mt-4 d-flex">
+                        <div class="w-50">
+                            <label for="height" class="form-label required mt-1">Height</label>
+                            <div class="d-flex align-items-center ">
+                                <input type="range" class="form-range w-75 rounded-4 me-3 mb-2" id="range1">
+                                <input type="text" value="160cm" class="measure w-25 text-center pt-3 pb-3 rounded-4 mb-2" disabled id="height">
+                            </div>
+                        </div>
+                        <div class="w-50">
+                            <label for="weight" class="form-label required mt-1">Weight</label>
+                            <div class="d-flex align-items-center">
+                                <input type="range" class="form-range w-75 me-3 mb-2" id="range1 rounded-4">
+                                <input type="text" value="68kg " class="measure w-25 text-center pt-3 pb-3 rounded-4 mb-2" disabled id="height">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-5">
+                            <label for="input-color" class="required">Choose Color</label>
+                            <input type="color" value="#CB5D9F" class="form-control color-chooser rounded-4 mt-3">
+                        </div>
+                        <div class="col-md-7">
+                            <label for="template" class="required mb-2">Choose Templates</label>
+                            <div class="mt-3">
+                                <input type="checkbox" id="template">
+                                <label for="template" class="me-3">Template 1</label>
+                                <input type="checkbox" id="template">
+                                <label for="template" class="me-3">Template 2</label>
+                                <input type="checkbox" id="template">
+                                <label for="template" class="me-3">Template 3</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mt-3">
+                        <label for="qualification">Qualifications</label>
+                        <input type="text" id="qualification" class="form-control rounded-4 opacity-50 mt-3" placeholder="enter qualifications">
+                    </div>
+                    <div class="col-md-12 mt-4">
+                        <label for="your-self" class="required">About Your Self</label>
+                        <textarea name="" id="your-self"  rows="8" class="form-control rounded-4 opacity-50 mt-3 mb-2" placeholder="enter here... "></textarea>
+                    </div>
+                    <row class="col-md-12">
+                        <input type="checkbox" id="terms&condition">
+                        <label for="terms&condition">I Accept Terms & Conditions</label>
+                    </row>
+                    
+                </div>
+            </div>
+            <div class="row col-xxl btn-area bg-white mb-3 rounded-4 pt-3 pb-3">
+                <div class="gap-0 column-gap-3">
+                    <button class="cancel-btn p-3 button rounded-4">
+                        Cancel
+                    </button>
+                    <button class="save-btn p-3 button rounded-4">
+                        Save Changes
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+</body>
+</html>
